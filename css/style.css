@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
+:root {
+  --dataSize: 50px;
+}
+
+*,
+*::after, 
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.head {
+  background: linear-gradient(to right, #ff621f, #ac25ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  font-size: 15vw;
+  font-weight: 900;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8vw;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.month-title {
+  font-size: 32px;
+  color: #404040;
+  line-height: 1,2em;
+  margin-bottom: 16px;
+}
+
+.month-name {
+  color: #aa0e6c;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.month-content {
+  display: inline-grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.month-date {
+  width: var(--dataSize);
+  height: calc(var(--dataSize) / 2);
+  color: #83818e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.month-date--accent {
+  color: #e6007e;
+}
